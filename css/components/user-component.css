@@ -1,5 +1,6 @@
 .user-component {
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .user-component__column--gray {
   color: #a4a4a4;
