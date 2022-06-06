@@ -1,0 +1,16 @@
+.more-screen .icon-row {
+  margin-top: 35px;
+}
+.more-screen .icon-row .icon-row__icon {
+  width: 15%;
+}
+
+.more-suggestions {
+  margin-top: 50px;
+  border-top: var(--main-border);
+  padding-top: 40px;
+  font-weight: 600;
+}
+.more-suggestions__title {
+  margin-bottom: 30px;
+}
