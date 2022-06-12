@@ -15,7 +15,7 @@
   z-index: 1;
 }
 #chat-screen .status-bar {
-  background-color: rgba(135, 161, 182, 0.5);
+  background-color: rgb(166, 189, 207);
   z-index: 2;
 }
 .main-chat {
@@ -80,4 +80,56 @@
 
 .message-row--own .message__info {
   flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.reply .reply__column:first-child {
+  color: var(--gray);
+  width: 8%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply input {
+  height: 35px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+.reply__column:last-child > i,
+.reply button {
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+.reply button {
+  margin-right: 0px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  right: -18px;
+  color: black;
+  background-color: var(--yellow);
+  border: 0px;
+}
+
+.reply__column:last-child > i {
+  right: 30px;
+  top: 19px;
+  color: var(--gray);
 }
